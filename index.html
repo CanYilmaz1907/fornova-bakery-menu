@@ -161,20 +161,7 @@
     }
     .nav .lang-switch a { border-color: rgba(0, 30, 65, 0.2); }
     .cover__panel::before {
-      content: "";
-      position: absolute;
-      top: 8%;
-      left: 50%;
-      translate: -50% 0;
-      width: min(340px, 120%);
-      height: min(340px, 120%);
-      border-radius: 50%;
-      background: var(--cream-soft);
-      box-shadow:
-        0 0 0 28px rgba(245, 239, 219, 0.55),
-        0 0 0 56px rgba(197, 186, 97, 0.22);
-      z-index: 0;
-      pointer-events: none;
+      display: none;
     }
     .cover__panel > * { position: relative; z-index: 1; }
 
@@ -542,11 +529,6 @@
       }
       .cover__panel {
         padding: max(1.35rem, var(--safe-top)) 1rem max(1.35rem, var(--safe-bottom));
-      }
-      .cover__panel::before {
-        width: min(300px, 130%);
-        height: min(300px, 130%);
-        top: 4%;
       }
       .bakery-seal--lg { width: min(220px, 58vw); }
       .bakery-seal { width: min(168px, 46vw); }
